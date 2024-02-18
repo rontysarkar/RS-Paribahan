@@ -242,20 +242,21 @@
 
                               <!-- dynamic set info  -->
 
-                            <div class="flex justify-between ">
-                                <h1 class="text-lg">A1</h1>
-                                <h1>Economoy</h1>
-                                <h1 id="price">550</h1>
+                            <div id="seats-info" class="space-y-5">
+                                
                             </div>
+
                             <hr class=" border ">
                             <div class="flex justify-between">
                                 <h1 class="font-bold">Total Price</h1>
                                 <h1 class="font-bold">BDT <span id="total-price" class="font-bold text-lg">0</span></h1>
                             </div>
                             <!-- coupon button  -->
+                            <div id="discount-info" class="space-y-5 mb-5 ">
+                            </div>
                                 <div class=" flex justify-center relative ">
                                     <input type="text" id="input-coupon" placeholder="Have any coupon?" class="input input-bordered w-full max-w-md  border-none py-8 " />
-                                    <button id="apply-btn" class="btn absolute right-0 md:right-20 lg:right-0 xl:right-6 top-2 bg-[#1DD100] text-white px-6">Apply</button>
+                                    <button id="apply-btn" onclick="couponBtn()" disabled class="btn absolute right-0 md:right-20 lg:right-0 xl:right-6 top-2 bg-[#1DD100] text-white px-6">Apply</button>
                                 </div>
                                 
                             <div>
