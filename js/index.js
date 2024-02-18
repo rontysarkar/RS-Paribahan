@@ -13,6 +13,9 @@ for(const seat of seats){
       seat.classList.add('bg-[#1dd100]')
       const seatName = seat.innerText
       selectseat(seatName);
+      
+     }else{
+      alert('A person purchase a maximum of four tickets.You Have already Selected four Ticket')
      }
   })
 }
@@ -78,7 +81,7 @@ function couponBtn(){
     div.classList.add('flex')
     div.classList.add('justify-between')
     const h2 = document.createElement('h1');
-    h2.innerText = 'Discount'
+    h2.innerText = '15 % Discount'
     const h1 = document.createElement('h1')
     h1.classList.add('text-lg')
     h1.innerText = '-' + discount;
@@ -99,7 +102,7 @@ function couponBtn(){
     div.classList.add('flex')
     div.classList.add('justify-between')
     const h2 = document.createElement('h1');
-    h2.innerText = 'Discount'
+    h2.innerText = '20% Discount'
     const h1 = document.createElement('h1')
     h1.classList.add('text-lg')
     h1.innerText = '-' + discount;
@@ -113,6 +116,17 @@ function couponBtn(){
     alert('Invalid Coupon Code ! Please Enter a Valid Coupon')
   }
   
+}
+
+
+// input infomation 
+
+function inputInformation(){
+  const inputNumber = document.getElementById('input-number').value;
+  const inputInfoBtn = document.getElementById('input-info-btn');
+  if(selectSeats.length > 0 ){
+    inputInfoBtn.disabled = false;
+  }
 }
 
 
