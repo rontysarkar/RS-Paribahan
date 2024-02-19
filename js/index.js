@@ -130,4 +130,21 @@ function inputInformation(){
 }
 
 
+//  next button and Continue button functon
+
+ const mainSection = document.getElementById('main-section')
+ const mainSection2 = document.getElementById('main-section-2')
+
+
+function nextBtn(){
+  mainSection.classList.add('hidden');
+  mainSection2.classList.remove('hidden');
+}
+function continueBtn(){
+  mainSection2.classList.add('hidden');
+  mainSection.classList.remove('hidden');
+  window.location.reload()
+}
+
+
 

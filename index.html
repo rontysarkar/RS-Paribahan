@@ -40,7 +40,7 @@
             </div>
           </div>
     </header>
-    <main>
+    <main id="main-section" class="">
                         <!-- banner section -->
         <section class="container mx-auto lg:px-28">
             <div class=" h-40 md:h-80 lg:h-[550px] my-8 bg-no-repeat bg-center bg-contain flex justify-center items-center "
@@ -50,7 +50,7 @@
             <h1 class="text-[#1DD100] md:text-3xl lg:text-5xl font-bold  " >RS Paribahan</h1>
             <p class=" text-white text-xs md:text-sm px-10 md:px-24 lg:px-32 xl:px-40 2xl:px-64 hidden lg:block ">Our bus paribahan service offers seamless transportation solutions with a focus on reliability and passenger satisfaction. ensuring a smooth journey for our passengers every time they travel with us</p>
                                             <!-- banner button  -->
-           <a href="#bus-section"> <button id="buy-tickets-btn"  class=" btn   bg-[#1DD100] font-bold  border-none">Buy Tickets</button></a>
+           <a href="#bus-section"> <button id="buy-tickets-btn"  class=" btn  bg-[#1DD100] font-bold  border-none xl:mt-10 ">Buy Tickets</button></a>
 
         </div>
             </div>
@@ -91,7 +91,7 @@
             </div>
         </section>
                  <!-- Bus  -->
-        <section id="bus-section" class="bg-[#F7F8F8] border-t-2 border-[#1DD100]  mb-[600px] ">
+        <section id="bus-section" class="bg-[#F7F8F8] border-t-2 border-[#1DD100] ">
             <div class="container mx-auto lg:px-28  ">
                 <div class="mt-28 space-y-8">
                     <div class=" ">
@@ -101,7 +101,7 @@
                     <!-- bus -->
                     <div class="flex flex-col lg:flex-row  bg-[#FFFFFF]    rounded-xl  ">
                         <div class="lg:flex-1 lg:p-10 ">
-                            <div class="flex  justify-between ">
+                            <div class="flex  justify-between mt-4 mx-2 ">
                                 <div class="flex gap-3">
                                     <img class="size-8 lg:size-16" src="./images/bus-logo.png" alt="">
                                     <div>
@@ -275,9 +275,19 @@
                             <h1 class="font-bold">Phone Number*</h1>
                             <input id="input-number" onclick="inputInformation()" type="number" placeholder="Enter your phone number" name="" class=" border py-5 pl-6 w-full rounded-xl ">
                             <h1 class="font-bold">Email ID</h1>
-                            <input type="email" name="" placeholder="Enter your email id" id="" class=" border py-5 pl-6 w-full rounded-xl ">
-                            <!-- <button id="input-info-btn" disabled  class="py-5 w-full rounded-xl bg-[#1DD100] text-white text-xl font-bold">Next</button> -->
-                            <button disabled id="input-info-btn" class="btn w-full text-white bg-[#1DD100] py-8 rounded-2xl">Next</button>
+                            <input type="email" name="" placeholder="Enter your email id" id="" class=" border py-5 pl-6 w-full rounded-xl  ">
+                           
+                            <a  href="#main-section-2"><button disabled id="input-info-btn" onclick="nextBtn()" class="btn w-full mt-5 text-white bg-[#1DD100]  rounded-2xl">Next</button></a>
+                        </div>
+                        <div class="flex justify-between mt-4">
+                            <div>
+                                <a href="#">Terms and Conditions</a>
+                            <hr>
+                            </div>
+                            <div>
+                                <a href="#">Cancellation Policy</a>
+                                <hr>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -285,9 +295,56 @@
         </section>
                     
     </main>
-    <footer>
 
+    <main id="main-section-2" class="hidden bg-slate-300  min-h-screen flex justify-center items-center">
+        <div class="w-[750px] h-[480px] bg-white flex flex-col justify-center items-center gap-6">
+            <img class="" src="./images/success.png" alt="">
+            <h1 class="text-[#27AE60] text-2xl font-bold">SUCCESS</h1>
+            <h2 class="font-bold px-32 text-center">Thank you for Booking Our Bus Seats. 
+             We are working hard to find the best service and deals for you. </h2>
+             <p>Shortly you will find a confirmation in your email.</p>
+             <button id="continue-btn" onclick="continueBtn()" class="btn bg-[#27AE60] text-white px-28 rounded-3xl">Continue</button>
+
+        </div>
+    </main>
+
+    <footer class=" bg-black">
+        <footer class="footer lg:p-10 container mx-auto mb-6 ">
+            <div class=" lg:w-[80%] mx-auto  flex justify-between mt-10 ">
+                <nav>
+                    <h6 class=" text-white font-bold text-3xl">E-Ticket</h6> <br>
+                    <h1 class="w-60 text-white">E-Ticket is a digital platform to make your daily commuting better</h1>
+                  </nav> 
+                  
+                  <nav>
+                    <h6 class="font-bold text-xl mb-4 text-white">Download our app</h6>
+                    <div class="flex gap-4 border-2 p-2 lg:py-2 lg:px-10 rounded-xl">
+                      <img class="size-6" src="./images/playstore.png" alt="">
+                      <div>
+                          <h1 class="text-xs text-white">GET IT ON</h1>
+                          <h1 class="font-bold text-xs lg:text-lg  text-white">Google Play</h1>
+                      </div>
+                    </div> 
+                    
+                  </nav>
+            </div>
+          </footer> 
+          <footer class="footer px-10 py-4 border-t   border-base-300 container mx-auto">
+            <div class=" w-[80%] mx-auto  flex justify-between mt-6">
+                <aside class="items-center grid-flow-col">
+                    <p class="text-white">@all rights reserved, P-Ticket services limited.2024</p>
+                  </aside> 
+                  <nav class="md:place-self-center md:justify-self-end">
+                    <div class="grid grid-flow-col gap-4">
+                      <h1 class="text-white">Terms & condition</h1>
+                      <h1 class="text-white">Return & refund policy</h1>
+                      <h1 class="text-white">Privacy policy</h1>
+                    </div>
+                  </nav>
+            </div>
+          </footer>
     </footer>
+
     <script src="js/index.js"></script>
 </body>
 </html>
