@@ -81,6 +81,7 @@ function couponBtn(){
     div.classList.add('flex')
     div.classList.add('justify-between')
     const h2 = document.createElement('h1');
+    h2.classList.add('text-[#ffbf0f]')
     h2.innerText = '15 % Discount'
     const h1 = document.createElement('h1')
     h1.classList.add('text-lg')
@@ -102,6 +103,7 @@ function couponBtn(){
     div.classList.add('flex')
     div.classList.add('justify-between')
     const h2 = document.createElement('h1');
+    h2.classList.add('text-[#f78c9c]')
     h2.innerText = '20% Discount'
     const h1 = document.createElement('h1')
     h1.classList.add('text-lg')
